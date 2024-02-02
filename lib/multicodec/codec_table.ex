@@ -8,6 +8,7 @@ defmodule Multicodec.CodecTable do
   # We put it here rather than trust the CSV directly since we do not own the CSV.
   # It is good to review it here first and not depend on it at compile time.
   @codec_mappings [
+    %Multicodec.MulticodecMapping{code: 231, codec: "secp256k1-pub", prefix: "z"},
     %Multicodec.MulticodecMapping{code: 85, codec: "raw", prefix: "U"},
     %Multicodec.MulticodecMapping{code: 81, codec: "cbor", prefix: "Q"},
     %Multicodec.MulticodecMapping{code: 80, codec: "protobuf", prefix: "P"},
